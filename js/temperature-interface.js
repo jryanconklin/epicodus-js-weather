@@ -1,17 +1,19 @@
 var Weather = require('./../js/weather.js').weatherModule;
 
 var displayKelvin = function(city, tempData) {
-  $('.showTemp').append("The temperature in " + city + " is " + tempData + "K");
+  $('.showTemp').text("The temperature in " + city + " is " + tempData + "K");
 }
 
 var displayCelsius = function(city, tempData) {
   tempData = tempData - 273.15;
-  $('.showTemp').append("The temperature in " + city + " is " + tempData + "C");
+  tempNew = tempData.toFixed(2);
+  $('.showTemp').text("The temperature in " + city + " is " + tempNew + "C");
 }
 
 var displayFahrenheit = function(city, tempData) {
   tempData = (tempData * 1.8) - 459.67;
-  $('.showTemp').append("The temperature in " + city + " is " + tempData + "F");
+  tempNew = tempData.toFixed(2);
+  $('.showTemp').text("The temperature in " + city + " is " + tempNew + "F");
 }
 
 

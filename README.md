@@ -21,6 +21,10 @@ For best results, please:
 - Install Dependencies Located in "package.json" and "bower.json" files
 - Open HTML file
 
+## Known Issues and Bugs
+
+- The Temp Conversion to Two Decimal Points Causes Too Many API Requests and Bugs Out. Reconfigure Celsius and Fahrenheit to their Own API Calls.
+
 ## Specifications
 
 *As a user, I want to .*
