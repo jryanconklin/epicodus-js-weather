@@ -16,11 +16,40 @@
       <label for="location">Enter a location:</label>
       <input id="location" type="text">
 
-      <button class="btn btn-primary" id="humidityLocation">Humidify!</button>
-      <button class="btn btn-danger" id="tempLocation">Tempify!</button>
+      <div class="row">
+        <div class="displayError">
 
-      <div class="showWeather">
+        </div>
+        <div class="col-sm-6 showHumidity">
+          <h4>Humidity</h4>
+          <button class="btn btn-primary" id="humidityLocation">Humidify!</button>
+        </div>
 
+        <div class="col-sm-6 showTemp">
+          <h4>Temperature</h4>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="degreetype" id="kelvin" value="kelvin" checked>
+              Kelvin
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="degreetype" id="fahrenheit" value="fahrenheit">
+              Fahrenheit
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="degreetype" id="celsius" value="celsius">
+              Celsius
+            </label>
+          </div>
+
+
+          <button class="btn btn-primary" id="temperatureLocation">Tempify!</button>
+        </div>
       </div>
 
       <footer>
