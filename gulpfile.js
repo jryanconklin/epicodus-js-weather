@@ -64,6 +64,18 @@ gulp.task('build', ['clean'], function() {
   gulp.start('bower'); //Functions Once Bower Added Below
 });
 
-
-
 // Bower Tasks
+gulp.task('bowerJS', function() {
+  return gulp.src(lib.ext('js').files)
+    .pipe(concat('vendor.min.js'))
+    .pipe(uglifiy())
+    .pipe(gulp.dest('./build/js'));
+});
+
+gulp.task('bowerCSS', function() {
+  return gulp.src(lib.ext('css').files)
+    .pipe(concat('vendor.css'))
+    .pipe(gulp.dest('./build/css'));
+});
+
+gulp.task('bower', ['bowerJS', 'bowerCSS']);
