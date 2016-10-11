@@ -42,3 +42,9 @@ bower install
 # API's and Optional Installs
 bower install moment --save
 <script src="bower_components/moment/min/moment.min.js"></script>
+
+# Final Script and CSS Tags
+
+<link rel="stylesheet" href="build/css/vendor.css">
+<script src="build/js/vendor.min.js"></script>
+<script type="text/javascript" src="build/js/app.js"></script>
