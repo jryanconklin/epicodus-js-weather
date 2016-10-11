@@ -1,0 +1,32 @@
+{
+  "name": "js-weather",
+  "version": "1.0.0",
+  "description": "A Weather App!",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mehequanna/js-weather.git"
+  },
+  "author": "J. Ryan Conklin and Stephen Emery",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mehequanna/js-weather/issues"
+  },
+  "homepage": "https://github.com/Mehequanna/js-weather#readme",
+  "devDependencies": {
+    "bower-files": "^3.14.1",
+    "browser-sync": "^2.17.2",
+    "browserify": "^13.1.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.9.3",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

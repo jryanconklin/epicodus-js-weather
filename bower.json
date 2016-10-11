@@ -1,0 +1,21 @@
+{
+  "name": "js-weather",
+  "description": "A Weather App!",
+  "main": "gulpfile.js",
+  "authors": [
+    "J. Ryan Conklin and Stephen Emery"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7"
+  }
+}
